@@ -1,1 +1,1 @@
-# DevOps-Project-Netflix-Clone
+# DevOps-Project-Netflix-Clone-AWS
