@@ -1,2 +1,2 @@
 # DevOps-Project-Netflix-Clone-Aws
-![image](https://github.com/user-attachments/assets/84dc7e84-a7b1-416e-8101-622605704b3b)
+![image](https://github.com/user-attachments/assets/2b4b2547-8308-4cb7-ba90-daaffd0bcffd)
