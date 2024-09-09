@@ -170,9 +170,9 @@ resource "aws_eks_node_group" "eksnode" {
   } 
 
   scaling_config {
-    desired_size = 2
-    max_size     = 2
-    min_size     = 2
+    desired_size = 4
+    max_size     = 4
+    min_size     = 4
   }
 
   update_config {
