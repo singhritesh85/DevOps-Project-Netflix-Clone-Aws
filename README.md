@@ -46,6 +46,10 @@ After execution of Jenkins Job, email will be triggered to group email id for no
 ![image](https://github.com/user-attachments/assets/ba76aebd-931f-418b-ab66-861d3734844e)
 ![image](https://github.com/user-attachments/assets/d190b2a4-20a9-4f80-8492-ce73de26a818)
 
+TMDB API Key can used as shown below while building the Docker Image.
+![image](https://github.com/user-attachments/assets/7e17924a-cba2-4eb4-8b47-dda6d45fc391)
+
+
 
 <br><br/>
 <br><br/>
