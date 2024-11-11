@@ -7,7 +7,7 @@ pipeline{
     }
     environment{
         JAVA_HOME="/usr/lib/jvm/java-17-amazon-corretto.x86_64"
-        PATH="$PATH:$JAVA_HOME/bin"
+        PATH="$PATH:$JAVA_HOME/bin:/opt/sonar-scanner/bin:/opt/dependency-check/bin:/opt/node-v16.0.0-linux-x64/bin"
     }
     parameters {
         string(name: 'COMMIT_ID', defaultValue: '', description: 'Provide the Commit ID')
