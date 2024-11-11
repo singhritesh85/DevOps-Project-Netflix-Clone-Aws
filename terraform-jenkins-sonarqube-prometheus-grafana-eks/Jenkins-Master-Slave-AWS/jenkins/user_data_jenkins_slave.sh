@@ -34,7 +34,7 @@ rm -f dependency-check-8.4.0-release.zip
 chown -R jenkins:jenkins /opt/dependency-check
 cd /opt && curl -sfL https://raw.githubusercontent.com/aquasecurity/trivy/main/contrib/install.sh | sh -s -- -b /usr/local/bin v0.38.3
 echo JAVA_HOME="/usr/lib/jvm/java-17-amazon-corretto.x86_64" >> /home/jenkins/.bashrc
-echo PATH="$PATH:$JAVA_HOME/bin:/opt/apache-maven/bin:/opt/node-v16.0.0/bin:/opt/dependency-check/bin:/usr/local/bin" >> /home/jenkins/.bashrc
+echo PATH="$PATH:$JAVA_HOME/bin:/opt/apache-maven/bin:/opt/node-v16.0.0/bin:/opt/dependency-check/bin" >> /home/jenkins/.bashrc
 echo "jenkins  ALL=(ALL)  NOPASSWD:ALL" >> /etc/sudoers 
 yum remove awscli -y
 cd /opt && curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
