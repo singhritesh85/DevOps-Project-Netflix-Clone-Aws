@@ -64,7 +64,7 @@ pipeline{
             steps{
                 //sh 'yes|argocd login argocd.singhritesh85.com --username admin --password Admin@123'
                 sh 'argocd login argocd.singhritesh85.com --username admin --password Admin@123 --skip-test-tls  --grpc-web'
-                sh 'argocd app create netflix-clone --project default --repo https://github.com/singhritesh85/helm-repo-for-netflix-clone.git --path ./folo --dest-namespace netflix --dest-server https://kubernetes.default.svc --helm-set service.port=80 --helm-set image.repository=${REPO_NAME} --helm-set image.tag=${TAG_NAME} --helm-set replicaCount=${REPLICA_COUNT} --upsert'
+                sh 'argocd app create netflix-clone --project default --repo https://github.com/singhritesh85/helm-repo-for-netflix-clone.git --path ./folo --dest-namespace netflix --sync-option CreateNamespace=true --dest-server https://kubernetes.default.svc --helm-set service.port=80 --helm-set image.repository=${REPO_NAME} --helm-set image.tag=${TAG_NAME} --helm-set replicaCount=${REPLICA_COUNT} --upsert'
                 sh 'argocd app sync netflix-clone'
             }
         }
